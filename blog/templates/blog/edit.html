@@ -1,0 +1,14 @@
+<head>
+
+</head>
+<body>
+    <h1>수정해보자굿!!!</h1>
+    <form method="POST" class = "post-form">
+        <!-- 데이터를 제출하는 method -->
+        {% csrf_token %}
+        <!-- 보안을 위해 form태그 안에 꼭 작성해 줘야하는 키워드 -->
+        {{  form.as_p  }}
+        <!-- 생성한 폼이 보이게 함 -->
+        <button type = "submit" class = "brn brn-secondary">저장</button>
+    </form>
+</body>

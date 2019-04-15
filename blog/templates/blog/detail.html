@@ -3,4 +3,7 @@
 <p>{{post.published_date}}</p>
 <p>{{post.text}}</p>
 <a href="{% url 'home'%}"> 홈으로!!</a>
+<a href="{% url 'edit' post.id %}">수정하기</a> 
+<a href= "{% url 'delete' post.id %}">삭제하기</a>
 </div>
+<!-- 수정하기를 누르면 해당 데이터가 무슨 데이터인지 알 수 있도록 id가 지정된 url을 추가했어요. -->
